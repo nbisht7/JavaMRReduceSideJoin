@@ -1,0 +1,6 @@
+com/nbisht/mr/reducesidejoin/CalculateTotalSales.class
+com/nbisht/mr/reducesidejoin/SalesMapper.class
+com/nbisht/mr/reducesidejoin/SalesAggregatorReducer.class
+com/nbisht/mr/reducesidejoin/StateSalesMapper.class
+com/nbisht/mr/reducesidejoin/CustomerMapper.class
+com/nbisht/mr/reducesidejoin/CustomerSalesJoinReducer.class
