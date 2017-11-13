@@ -27,7 +27,7 @@ Hadoop - 2.8.2 (https://dtflaneur.wordpress.com/2015/10/02/installing-hadoop-on-
 
 Download/Clone this repo.
 
-1.For running in the code local mode in hadoop and testing within eclipse:
+1.For running in local mode in hadoop and testing within eclipse:
   Provide input files and output paths under arguments section inside run configuration.
 
 ```
