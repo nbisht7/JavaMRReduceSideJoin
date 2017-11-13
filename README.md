@@ -36,10 +36,21 @@ InputOutputDir/customers InputOutputDir/sales InputOutputDir/opFile
 ```
 
 2. For running in cluster mode in hadoop and running from command line:
-   Please run below commands from the folder where the repo is checked out.
+   Please run below commands from the command line:
+  
+   sh /usr/local/Cellar/hadoop/2.8.2/sbin/start-all.sh
+  
+   hadoop fs -mkdir /usr/<username>/input
+   hadoop fs -mkdir /usr/<username>/output
    
-cd bin
-sh runMr.sh
+   cd InputOutput
+   hadoop fs -put customers /usr/<username>/input
+   hadoop fs -put sales /usr/<username>/input
+  
+   sh /usr/local/Cellar/hadoop/2.8.2/sbin/stop-all.sh
+  
+   cd bin
+   sh runMr.sh
 
 ## Built With
 
