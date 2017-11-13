@@ -7,7 +7,8 @@ Purpose : Calculate total sales by state given two csv input files - customers a
 
 Input files Schema:
 
-customers : customer_id,name,street,city,state,zip__
+customers : customer_id,name,street,city,state,zip
+
 sales : timestamp,customer_id,sales_price
 
 Output file Schema:
