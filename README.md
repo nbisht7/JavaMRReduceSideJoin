@@ -41,10 +41,13 @@ InputOutputDir/customers InputOutputDir/sales InputOutputDir/opFile
    sh /usr/local/Cellar/hadoop/2.8.2/sbin/start-all.sh
   
    hadoop fs -mkdir /usr/<username>/input
+  
    hadoop fs -mkdir /usr/<username>/output
    
    cd InputOutput
+   
    hadoop fs -put customers /usr/<username>/input
+  
    hadoop fs -put sales /usr/<username>/input
   
    sh /usr/local/Cellar/hadoop/2.8.2/sbin/stop-all.sh
