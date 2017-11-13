@@ -18,8 +18,9 @@ exit
 fi
 
 #Defining hdfs input and output hadoop directories required by the mapreduce job
-hdfs_input_dir="/usr/nbisht/input"
-hdfs_output_dir="/usr/nbisht/output"
+# Note : Replace 'username' with your name
+hdfs_input_dir="/usr/username/input"
+hdfs_output_dir="/usr/username/output"
 
 #Testing whether input files are present or not
 hadoop fs -test -d $hdfs_input_dir
@@ -27,7 +28,7 @@ res=`echo $?`
 if [ $res == 0 ]; then
 echo "Input directory is present."
 else
-hadoop fs -mkdir -p /usr/nbisht/input
+hadoop fs -mkdir -p /usr/username/input
 echo "Input directory created."
 exit
 fi
@@ -36,7 +37,7 @@ fi
 hadoop fs -test -d $hdfs_output_dir/opFile
 res=`echo $?`
 if [ $res == 0 ]; then
-hadoop fs -rmr /usr/nbisht/output/opFile
+hadoop fs -rmr /usr/username/output/opFile
 echo "Output directory deleted."
 else
 echo "Output directed is not present."
