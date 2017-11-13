@@ -53,6 +53,7 @@ InputOutputDir/customers InputOutputDir/sales InputOutputDir/opFile
    sh /usr/local/Cellar/hadoop/2.8.2/sbin/stop-all.sh
   
    cd bin
+   
    sh runMr.sh
 
 ## Built With
