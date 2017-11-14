@@ -48,7 +48,6 @@ public class CalculateTotalSales {
 			Job mr2 = new Job(config, "Sales aggregation by State");
 			mr2.setJarByClass(CalculateTotalSales.class);
 			mr2.setMapperClass(StateSalesMapper.class);
-			mr2.setCombinerClass(SalesAggregatorReducer.class);
 			mr2.setReducerClass(SalesAggregatorReducer.class);
 			mr2.setOutputKeyClass(Text.class);
 			mr2.setOutputValueClass(DoubleWritable.class);
