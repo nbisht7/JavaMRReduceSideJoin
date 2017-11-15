@@ -8,7 +8,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 
 /**
  * @author nbisht7. 
- * Purpose - States Mapper to fetch the data from intermediate directory in hadoop. 
+ * Purpose - Final reducer to calculate aggregate sales price for each state.
  * Input Schema - state, salesPrice
  * Output Schema - state, totalSalesPrice
 */
